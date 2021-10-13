@@ -13,7 +13,7 @@ public class Make_Appointment_Page_loc extends Browser_Launcher
 	{
 		
 		LogIn_Page lp = new LogIn_Page();
-		lp.login_page_loc();
+		lp.login_page_TC1();
 		
 		
 		WebElement Facility = driver.findElement(By.id("combo_facility"));

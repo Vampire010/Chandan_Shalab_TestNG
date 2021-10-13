@@ -2,38 +2,27 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-12T07:48:28 IST" name="Default suite" finished-at="2021-10-12T07:48:46 IST" duration-ms="18203">
+  <suite started-at="2021-10-13T08:04:43 IST" name="Default suite" finished-at="2021-10-13T08:05:00 IST" duration-ms="16925">
     <groups>
+      <group name="Create_Depsit_Accont_Module">
+        <method signature="KB_Groups.Tc2()[pri:0, instance:TestNG_Groups.KB_Groups@53976f5c]" name="Tc2" class="TestNG_Groups.KB_Groups"/>
+      </group> <!-- Create_Depsit_Accont_Module -->
+      <group name="login_Module">
+        <method signature="KB_Groups.Tc1()[pri:0, instance:TestNG_Groups.KB_Groups@53976f5c]" name="Tc1" class="TestNG_Groups.KB_Groups"/>
+        <method signature="KB_Groups.Tc2()[pri:0, instance:TestNG_Groups.KB_Groups@53976f5c]" name="Tc2" class="TestNG_Groups.KB_Groups"/>
+      </group> <!-- login_Module -->
     </groups>
-    <test started-at="2021-10-12T07:48:28 IST" name="Default test" finished-at="2021-10-12T07:48:46 IST" duration-ms="18203">
-      <class name="Test_Runner.LoginTest">
-        <test-method is-config="true" signature="opne_Browser()[pri:0, instance:Test_Runner.LoginTest@be35cd9]" started-at="2021-10-12T07:48:28 IST" name="opne_Browser" finished-at="2021-10-12T07:48:33 IST" duration-ms="4840" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- opne_Browser -->
-        <test-method signature="Tc1()[pri:0, instance:Test_Runner.LoginTest@be35cd9]" started-at="2021-10-12T07:48:33 IST" name="Tc1" finished-at="2021-10-12T07:48:34 IST" duration-ms="1059" status="PASS">
+    <test started-at="2021-10-13T08:04:43 IST" name="Default test" finished-at="2021-10-13T08:05:00 IST" duration-ms="16925">
+      <class name="TestNG_Groups.KB_Groups">
+        <test-method signature="Tc1()[pri:0, instance:TestNG_Groups.KB_Groups@53976f5c]" started-at="2021-10-13T08:04:43 IST" name="Tc1" finished-at="2021-10-13T08:04:51 IST" duration-ms="8473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Tc1 -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:Test_Runner.LoginTest@be35cd9]" started-at="2021-10-12T07:48:34 IST" name="close_Browser" finished-at="2021-10-12T07:48:37 IST" duration-ms="3128" status="PASS">
+        <test-method signature="Tc2()[pri:0, instance:TestNG_Groups.KB_Groups@53976f5c]" started-at="2021-10-13T08:04:51 IST" name="Tc2" finished-at="2021-10-13T08:05:00 IST" duration-ms="8400" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close_Browser -->
-      </class> <!-- Test_Runner.LoginTest -->
-      <class name="Test_Runner.Book_Appointment_Test">
-        <test-method is-config="true" signature="opne_Browser()[pri:0, instance:Test_Runner.Book_Appointment_Test@3e84448c]" started-at="2021-10-12T07:48:37 IST" name="opne_Browser" finished-at="2021-10-12T07:48:41 IST" duration-ms="4162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- opne_Browser -->
-        <test-method signature="Tc1()[pri:0, instance:Test_Runner.Book_Appointment_Test@3e84448c]" started-at="2021-10-12T07:48:41 IST" name="Tc1" finished-at="2021-10-12T07:48:43 IST" duration-ms="1846" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Tc1 -->
-        <test-method is-config="true" signature="close_Browser()[pri:0, instance:Test_Runner.Book_Appointment_Test@3e84448c]" started-at="2021-10-12T07:48:43 IST" name="close_Browser" finished-at="2021-10-12T07:48:46 IST" duration-ms="3112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close_Browser -->
-      </class> <!-- Test_Runner.Book_Appointment_Test -->
+        </test-method> <!-- Tc2 -->
+      </class> <!-- TestNG_Groups.KB_Groups -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\archana\git\Chandan_Shalab_TestNG\CHandan_Shalab_TestNG\TestNG_Xml_Runner\Test_runner.xml</span>
+                    <span>C:\Users\archana\git\Chandan_Shalab_TestNG\CHandan_Shalab_TestNG\TestNG_Xml_Runner\TestNg_Group_Runer.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,12 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Runner.LoginTest" class="method navigator-link" hash-for-method="Tc1">Tc1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestNG_Groups.KB_Groups" class="method navigator-link" hash-for-method="Tc1">Tc1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Test_Runner.Book_Appointment_Test" class="method navigator-link" hash-for-method="Tc1">Tc1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestNG_Groups.KB_Groups" class="method navigator-link" hash-for-method="Tc2">Tc2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,7 +127,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Test_Runner.LoginTest</span>
+              <span class="class-name">TestNG_Groups.KB_Groups</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -137,19 +137,11 @@
                   <span class="method-name">Tc1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test_Runner.Book_Appointment_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Tc1">
-                  </a> <!-- Tc1 -->
-                  <span class="method-name">Tc1</span>
+                  <a name="Tc2">
+                  </a> <!-- Tc2 -->
+                  <span class="method-name">Tc2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -157,7 +149,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\archana\git\Chandan_Shalab_TestNG\CHandan_Shalab_TestNG\TestNG_Xml_Runner\Test_runner.xml</span>
+            <span class="header-content">C:\Users\archana\git\Chandan_Shalab_TestNG\CHandan_Shalab_TestNG\TestNG_Xml_Runner\TestNg_Group_Runer.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -165,9 +157,14 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;login_Module&quot;/&gt;
+        &lt;include name=&quot;Create_Depsit_Accont_Module&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Test_Runner.LoginTest&quot;/&gt;
-      &lt;class name=&quot;Test_Runner.Book_Appointment_Test&quot;/&gt;
+      &lt;class name=&quot;TestNG_Groups.KB_Groups&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -181,7 +178,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (2 classes)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,6 +188,26 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Create_Depsit_Accont_Module</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Tc2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">login_Module</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Tc1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Tc2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -210,17 +227,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Tc1')
-data.setCell(0, 2, 'Test_Runner.Book_Appointment_Test')
-data.setCell(0, 3, 1846);
+data.setCell(0, 2, 'TestNG_Groups.KB_Groups')
+data.setCell(0, 3, 8473);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Tc1')
-data.setCell(1, 2, 'Test_Runner.LoginTest')
-data.setCell(1, 3, 1059);
+data.setCell(1, 1, 'Tc2')
+data.setCell(1, 2, 'TestNG_Groups.KB_Groups')
+data.setCell(1, 3, 8400);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -246,34 +263,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">opne_Browser</span>
+              <div class="chronological-class-name">TestNG_Groups.KB_Groups</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Tc1</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Tc1</span>
-                <span class="method-start">4841 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close_Browser</span>
-                <span class="method-start">5906 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test_Runner.Book_Appointment_Test</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">opne_Browser</span>
-                <span class="method-start">9043 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Tc1</span>
-                <span class="method-start">13205 ms</span>
+                <span class="method-name">Tc2</span>
+                <span class="method-start">8484 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">close_Browser</span>
-                <span class="method-start">15053 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
