@@ -12,7 +12,8 @@ public class KB_Groups
 	KBLogin_TestRunner kblng = new KBLogin_TestRunner();
 	KBCreate_Depsit_Accounts_TestRunner cba = new KBCreate_Depsit_Accounts_TestRunner();
 
-	@Test(groups= "login_Module")
+	//@Test(groups= "login_Module",enabled = false)
+	@Test(priority = 2)
 	public void Tc1() throws IOException
 	{
 		kblng.open_browser();
@@ -20,7 +21,10 @@ public class KB_Groups
 		kblng.close_browser();
 	}
 
-	@Test(groups = {"Create_Depsit_Accont_Module","login_Module"})
+	
+	//@Test(groups = {"Create_Depsit_Accont_Module","login_Module"})
+	//@Test(dependsOnMethods ="Tc1" ,groups = "Create_Depsit_Accont_Module" )
+	@Test(priority = 1)
 	public void Tc2() throws IOException
 	{
 		cba.open_browser();

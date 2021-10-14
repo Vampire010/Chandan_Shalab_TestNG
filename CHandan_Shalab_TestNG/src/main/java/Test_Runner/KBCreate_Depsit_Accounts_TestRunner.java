@@ -4,20 +4,21 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import KB_Login_Page.Create_Deposit_Accounts;
 
 public class KBCreate_Depsit_Accounts_TestRunner
 {
-	String Browser_Types = "chrome";
+	//String Browser_Types = "chrome";
 	String Test_url ="http://mykidsbank.org/";
 	
 	Create_Deposit_Accounts CDA = new Create_Deposit_Accounts();
 	
-
+	@Parameters("Browser_Types")
 	@BeforeMethod
-	public void open_browser() throws IOException
+	public void open_browser(String Browser_Types) throws IOException
 	{
 		CDA.browser(Browser_Types, Test_url);
 		

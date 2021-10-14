@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Default suite" >
+ 
+  <test thread-count="5" name="Default test"  >
+	   <parameter name="Browser_Types" value="chrome" />
+		    <classes>
+		      <class name="Test_Runner.KBLogin_TestRunner"/>
+		    </classes>
+   </test >
+  
+   <test thread-count="5" name="Default test1"> 
+     <parameter name="Browser_Types" value="edge" />
+		    <classes>
+		      <class name="Test_Runner.KBCreate_Depsit_Accounts_TestRunner"/>
+		    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

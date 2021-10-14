@@ -21,8 +21,9 @@ public class LoginTest
 	}
 	
 	@Test( groups = "Smoke_Test" )
-	public void Tc1()
+	public void Tc1() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		lt.login_page_TC1();
 	}
 	
