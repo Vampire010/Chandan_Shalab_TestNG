@@ -16,7 +16,7 @@ public class KB_Groups
 	@Test(priority = 2)
 	public void Tc1() throws IOException
 	{
-		kblng.open_browser();
+	//	kblng.open_browser();
 		kblng.Login_Test_Runner();
 		kblng.close_browser();
 	}
@@ -27,7 +27,7 @@ public class KB_Groups
 	@Test(priority = 1)
 	public void Tc2() throws IOException
 	{
-		cba.open_browser();
+		//cba.open_browser();
 		cba.Create_Deposit_Accounts_Test_Runner();
 		cba.close_browser();
 	}
